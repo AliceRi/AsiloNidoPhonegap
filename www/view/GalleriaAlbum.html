@@ -1,0 +1,30 @@
+<ion-view view-title="Avvisi Generali">
+ 
+  <ion-content>
+    <h1>Galleria</h1>
+  <ion-item collection-repeat="item in albums">
+  <ion-item>
+       <a href="#/app/avviso/{{item}}#top"></a>
+       <div class="row ">
+           <div class="col" ng-click="Visualizza(item)">
+               <h1>{{item.Titolo}}</h1>
+           </div>
+           <!--<div class="col" >
+               <h3>{{item.descrizione}}</h3>
+               <button class="button button-block button-calm" ng-click="Verifica(item)">SELEZIONA</button>
+           </div>-->
+       </div>
+       <div class="row" style="width:100%;">
+          <div class="col">
+              <div back-img={{item.fotoAlbum}} ><!--<img src="{{item.fotoAlbum}}" class="image-list-thumb" />-->kjh</div>
+           </div>
+           <div class="col item-text-wrap">
+             {{item.descrizione}}
+         </div>
+       </div>
+      
+    </ion-item>
+  </ion-item>
+  </ion-content>
+  
+</ion-view>

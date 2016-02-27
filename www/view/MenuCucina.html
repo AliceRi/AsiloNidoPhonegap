@@ -1,0 +1,99 @@
+<ion-view view-title="MenuCucina" class="sfondoApplicazione">
+ 
+  <ion-content>
+    <h1>Menu del Giorno</h1>
+       
+        <label class="item item-input">
+  <span class="input-label">Date</span>
+             <input type="date" id="exampleInput" name="input" ng-model="example.value"
+       placeholder="dd/MM/yyyy"  required />
+</label>    
+    <button class="button button-block  button-assertive " ng-click="Verifica()">Vai alla data</button>
+    <div class="row">
+        <div class="col col-33">
+              <button class="button  button-assertive icon-left ion-chevron-left" ng-click="Precedente(true)">PREC</button>
+        </div>
+       
+        <div class="col col-33 col-offset-33"><button class="button  button-assertive icon-right ion-chevron-right" ng-click="Precedente(false)">SUCC</button></div>
+    </div>
+   
+  
+  
+  <ion-item collection-repeat="item in menus" style="background-color:transparent;">
+  
+      <div class="col sfondoMenuCucinaTitolo"  >
+           <h2 class="titoliMenuCucina" style=" font-weight: bold;" >PRIMO PIATTO</h2>
+       </div>
+  
+  <div class="row sfondoMenuCucina">
+      <div class="col col-50 " style="border-right: 1px solid red;vertical-align:middle;">
+          <h3 class="titolettiMenuCucina" style="    font-size: 120%;" >{{item.primoPiatto}}</h3>
+      </div>
+       <div class="col col-50">
+           <ion-item class="descrizioneMenu" >
+              <div class=" item-text-wrap " style="background-color:transparent;font-size: 100%;">{{item.descrizionePrimo}}</div>
+              </ion-item>
+          
+      </div>
+
+  </div>
+  
+      <div class="col sfondoMenuCucinaTitolo"  >
+           <h2 class="titoliMenuCucina" style=" font-weight: bold;" >SECONDO</h2>
+       </div>
+  
+  <div class="row sfondoMenuCucina">
+      
+       <div class="col col-50"  style="border-right: 1px solid red;">
+           <ion-item class="descrizioneMenu" >
+              <div class=" item-text-wrap " style="background-color:transparent;font-size: 100%;">{{item.descrizioneSecondo}}</div>
+              </ion-item>
+          
+      </div>
+      <div class="col col-50" >
+          <h3 class="titolettiMenuCucina" style="    font-size: 120%;">{{item.secondoPiatto}}</h3>
+      </div>
+      </div>  
+         
+      <div class="col sfondoMenuCucinaTitolo"  >
+           <h2 class="titoliMenuCucina" style=" font-weight: bold;" >CONTORNO</h2>
+       </div>
+  
+  <div class="row sfondoMenuCucina">
+       <div class="col col-50 " style="border-right: 1px solid red;">
+          <h3 class="titolettiMenuCucina" style="    font-size: 120%;" >{{item.contorno}}</h3>
+      </div>
+       <div class="col col-50">
+           <ion-item class="descrizioneMenu" >
+              <div class=" item-text-wrap " style="background-color:transparent;font-size: 100%;">{{item.descrizioneContorno}}</div>
+              </ion-item>
+      </div>
+     
+      </div> 
+         <div class="col sfondoMenuCucinaTitolo"  >
+           <h2 class="titoliMenuCucina" style=" font-weight: bold;" >FRUTTA e DOLCE</h2>
+       </div>
+
+  <div class="row sfondoMenuCucina">
+       <div class="col col-50 " style="border-right: 1px solid red;">
+          <h3 class="titolettiMenuCucina" style="    font-size: 120%;">{{item.frutta}}</h3>
+      </div>
+        <div class="col col-50 " >
+          <h3 class="titolettiMenuCucina" style="    font-size: 150%;">{{item.dolce}}</h3>
+      </div>
+     
+      </div>
+            <div class="col sfondoMenuCucinaTitolo"  >
+           <h2 class="titoliMenuCucina" style=" font-weight: bold;" >NOTE</h2>
+       </div>
+
+  <div class="row sfondoMenuCucina">
+       <div class="col col-50 " >
+          <h3>{{item.noteMenu}}</h3>
+      </div>
+     
+      </div>
+  </ion-item>
+  </ion-content>
+  
+</ion-view>

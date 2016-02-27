@@ -1,0 +1,72 @@
+<ion-view view-title="Foto Album" style="background-image:url('../img/sfondo3.jpg')">
+ 
+  <ion-content>
+    <h1>Galleria</h1>
+     
+        <br>
+
+        <div class="item item-divider">
+          <i class="ion-images"></i>
+          {{album.Titolo}}
+        </div>
+
+        <a class="item item-list-detail">
+          <ion-scroll direction="x" style="margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60);">
+            <img ng-repeat="image in fotos" ng-src="{{image.pathFoto}}" ng-click="showImages($index)" class="image-list-thumb"/>
+          </ion-scroll>
+        </a>
+        <div class="item">
+            <h2>{{album.descrizione}}</h2>
+        </div>
+
+
+     
+          
+   
+  <!-- <ion-pane>
+      <ion-header-bar class="bar-stable">
+        <h1 class="title">Devdactic Image Gallery</h1>
+      </ion-header-bar>
+      <ion-content class="has-header padding" >
+        <br><br>
+        
+        <div class="item item-divider">
+          <i class="ion-images"></i>
+          My Images
+        </div>
+       
+        <!--<a class="item item-list-detail">
+          <ion-scroll direction="x">
+           <ion-item collection-repeat="image in fotos">
+            <img  src="{{image.pathFoto}}" ng-click="showImages($index)" class="image-list-thumb"/>
+            </ion-item>
+          </ion-scroll>
+        </a>
+        
+      </ion-content>
+    </ion-pane>-->
+ <!-- <ion-item collection-repeat="item in fotos">
+  
+  <ion-item>
+       <a href="#/app/avviso/{{item}}#top"></a>
+       <div class="row">
+           <div class="col" ng-click="Verifica(item)">
+              <img src="{{item.pathFoto}}" />
+           </div>
+           
+       </div>
+       <div class="row" style="width:100%;">
+          <div class="col">
+              <div></div>
+           </div>
+       </div>
+      
+    </ion-item>
+  </ion-item>-->
+  </ion-content>
+  
+</ion-view>

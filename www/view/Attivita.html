@@ -1,0 +1,47 @@
+<ion-view view-title="MenuCucina" class="sfondoApplicazione">
+ 
+  <ion-content>
+    <h1>Attivita</h1>
+       
+        <label class="item item-input">
+  <span class="input-label">Date</span>
+             <input type="date" id="exampleInput" name="input" ng-model="example.value"
+       placeholder="dd/MM/yyyy"  required />
+</label>    
+    <button class="button button-block button-calm" ng-click="Verifica()">Vai alla data</button>
+    <div class="row">
+        <div class="col col-33">
+              <button class="button  button-calm icon-left ion-chevron-left" ng-click="Precedente(true)">PREC</button>
+        </div>
+       
+        <div class="col col-33 col-offset-33"><button class="button  button-calm icon-right ion-chevron-right" ng-click="Precedente(false)">SUCC</button></div>
+    </div>
+  <ion-item collection-repeat="item in attivita" style="background-color:transparent;"  >
+  <div ng-click="AttivaAttivita(item)" class="sfondoAttivita">
+   <div class="row" style="border-bottom:2px red;">
+       <div class="col titoliMenuCucina">
+           <h2 style="font-size:150%;">{{item.titolo}}</h2>
+       </div>
+   </div>
+   <div class="row">
+       <div class="col"></div>
+   </div>
+      <div><h3>{{item.s_titolo1}}</h3></div>
+     <div style="text-aign:right;"><h3 style="text-align:center;">{{item.s_titolo2}}</h3></div>
+      <div ><h3 style="text-align:right;">{{item.s_titolo3}}</h3></div>
+   <div class="row" >
+       <div class="col">
+           <div ><img src="{{item.foto1}}"  class="image-list-thumb-icon"/></div>
+       </div>
+       <div class="col">
+           <div ><img src="{{item.foto2}}"  class="image-list-thumb-icon"/></div>
+       </div>
+        <div class="col">
+           <div ><img src="{{item.foto3}}"  class="image-list-thumb-icon"/></div>
+       </div>
+   </div>
+    </div>
+  </ion-item>
+  </ion-content>
+  
+</ion-view>

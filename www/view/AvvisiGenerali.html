@@ -1,0 +1,31 @@
+<ion-view view-title="Avvisi Generali" class="sfondoApplicazione">
+ 
+  <ion-content>
+    <h1 style=" font-size: 350%;font-weight: bold">Avvisi</h1>
+  <ion-item class="item-thumbnail-right item-icon-right sfondoElenco" collection-repeat="item in avvisi" >
+     <!-- <ion-item>145, 89, 74,-->
+       <div class="row">
+           <div class="col-50" ng-click="Verifica(item)">
+               <h2 style=" font-size: 150%;font-weight: bold">{{item.titolo}}</h2>
+           </div>
+           <div class="col-50" >
+               <h3 style="margin-left: 50px;margin-tp:10px;">{{item.data | date:'dd/MM/yyyy'}}</h3>
+           </div>
+       </div>
+       <div class="row">
+          <div class="col ">
+             <ion-item style="border-top: 0px;
+  border-bottom: 0px;border-left:0px;border-right:0px;background-color:transparent;color:#f7f6ed;" >
+              <div class=" item-text-wrap " style="background-color:transparent;font-size: 100%;">{{item.descrizione.substr(0,60)}}...</div>
+              </ion-item>
+           </div>
+       </div>
+       <div ng-click="Verifica(item)">
+           <i class="icon ion-chevron-right icon-accessory"></i>
+       </div>
+      
+    <!--</ion-item>-->
+  </ion-item>
+  </ion-content>
+  
+</ion-view>

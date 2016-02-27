@@ -1,0 +1,73 @@
+<ion-view view-title="{{detail.data | date:'dd/MM/yyyy'}}" class="sfondoApplicazione">
+  <ion-content>
+  <br><br>
+   <div class="row">
+      <div class="col" style="background-color:rgba(242, 242, 242, 0.9);">
+          <h1 style="text-align:center;vertical-align:bottom;font-weight: bold;">{{detail.titolo}}</h1>
+      </div>
+       
+   </div>s
+   <br><br>
+   <div class="sfondoUnAttivita">
+       <div class="row">
+           <div class="col col-33">
+               <h2>{{detail.ora.substr(0,5) }}</h2>
+           </div>
+           <div class="col">
+               <h2>{{detail.s_titolo1}}</h2>
+           </div>
+       </div>
+       <div class="row">
+           <div class="col col-33">
+               <div> <img ng-src="{{detail.foto1}}" class="image-list-thumb-attivita" ng-click="showImages(0,detail.foto1)"/></div>
+           </div>
+           <div class="col">
+               {{detail.descrizione1}}
+           </div>
+       </div>
+       
+   </div>
+      <div class="sfondoUnAttivita">
+       <div class="row">
+           <div class="col col-33">
+               <h2>{{detail.ora2.substr(0,5)}}</h2>
+           </div>
+           <div class="col">
+               <h2>{{detail.s_titolo2}}</h2>
+           </div>
+       </div>
+       <div class="row">
+           
+           <div class="col">
+               {{detail.descrizione2}}
+           </div>
+           <div class="col col-33">
+               <div> <img ng-src="{{detail.foto2}}" class="image-list-thumb-attivita" ng-click="showImages(0,detail.foto2)"/></div>
+           </div>
+       </div>
+       
+   </div>
+   
+      <div class="sfondoUnAttivita">
+       <div class="row">
+           <div class="col col-33">
+               <h2>{{detail.ora3.substr(0,5)}}</h2>
+           </div>
+           <div class="col">
+               <h2>{{detail.s_titolo3}}</h2>
+           </div>
+       </div>
+       <div class="row">
+           <div class="col col-33">
+               <div> <img ng-src="{{detail.foto3}}" class="image-list-thumb-attivita" ng-click="showImages(0,detail.foto3)"/></div>
+           </div>
+           <div class="col">
+               {{detail.descrizione3}}
+           </div>
+       </div>
+       
+   </div>
+   
+  </ion-content>
+  
+</ion-view>
