@@ -1,24 +1,21 @@
-<ion-view view-title="Avvisi Generali">
+<ion-view view-title="ALBUM" class="sfondoApplicazione">
  
   <ion-content>
-    <h1>Galleria</h1>
-  <ion-item collection-repeat="item in albums">
-  <ion-item>
+    <h1 class="titoloPagina">GALLERIA</h1>
+  <ion-item collection-repeat="item in albums" style="background-color:transparent;">
+  <ion-item class="sfondoAlbumGallery">
        <a href="#/app/avviso/{{item}}#top"></a>
-       <div class="row ">
-           <div class="col" ng-click="Visualizza(item)">
-               <h1>{{item.Titolo}}</h1>
+       <div class="row">
+           <div class="col sfondoTitoloAlbum" ng-click="Visualizza(item)" >
+               <h1 style="text-align:center;">{{item.Titolo}}</h1>
            </div>
-           <!--<div class="col" >
-               <h3>{{item.descrizione}}</h3>
-               <button class="button button-block button-calm" ng-click="Verifica(item)">SELEZIONA</button>
-           </div>-->
        </div>
        <div class="row" style="width:100%;">
-          <div class="col">
-              <div back-img={{item.fotoAlbum}} ><!--<img src="{{item.fotoAlbum}}" class="image-list-thumb" />-->kjh</div>
+          <div class="col" style="text-align:center;" >
+              <img src="{{item.fotoAlbum}}" class="image-list-thumb-icon"
+             style="background-color:white;padding:4px;" />
            </div>
-           <div class="col item-text-wrap">
+           <div class="col item-text-wrap" style="color:black;">
              {{item.descrizione}}
          </div>
        </div>

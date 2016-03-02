@@ -30,7 +30,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
       controller:"AppCtrl"
     })      
   .state('app.home', {
-    url: '/',
+    url: '/home',
     templateUrl: 'view/Home.html'
   })
    .state('login', {
@@ -119,5 +119,24 @@ app.config(function($stateProvider, $urlRouterProvider) {
           }
       }
   })
+  .state('app.Video',{
+      url:'/video',
+      views:{
+          'menuContent':{
+              templateUrl:'view/ElencoVideo.html',
+              controller:'ElencoVideoCtrl'
+          }
+      }
+  })
+   .state('app.UnVideo',{
+      url:'/unvideo',
+      views:{
+          'menuContent':{
+              templateUrl:'view/Video.html',
+              controller:'VideoCtrl'
+          }
+      }
+  })
+  
   
 })

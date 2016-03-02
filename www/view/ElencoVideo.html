@@ -1,15 +1,12 @@
 <ion-view view-title="Avvisi Generali" class="sfondoApplicazione">
  
   <ion-content>
-    <h1 class="titoloPagina">AVVISI</h1>
-  <ion-item class="item-thumbnail-right item-icon-right sfondoElenco" collection-repeat="item in avvisi" >
+    <h1 class="titoloPagina">VIDEO</h1>
+  <ion-item class="item-thumbnail-right item-icon-right sfondoElenco" collection-repeat="item in videos" >
      <!-- <ion-item>145, 89, 74,-->
        <div class="row">
-           <div class="col-50" ng-click="Verifica(item)">
-               <h2 style=" font-size: 150%;font-weight: bold;">{{item.titolo}}</h2>
-           </div>
-           <div class="col-50" >
-               <h3 style="margin-left: 50px;margin-tp:10px;">{{item.data | date:'dd/MM/yyyy'}}</h3>
+           <div class="col" ng-click="Verifica(item)">
+               <h2 style=" font-size: 120%;font-weight: bold;">{{item.Titolo}}</h2>
            </div>
        </div>
        <div class="row">

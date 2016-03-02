@@ -1,7 +1,7 @@
-<ion-view view-title="Foto Album" style="background-image:url('../img/sfondo3.jpg')">
+<ion-view view-title="Foto Album" class="sfondoApplicazione">
  
-  <ion-content>
-    <h1>Galleria</h1>
+  <ion-content style="background-color:transparent;">
+    <h1 class="titoloPagina">{{album.Titolo}}</h1>
      
         <br>
 
@@ -10,7 +10,7 @@
           {{album.Titolo}}
         </div>
 
-        <a class="item item-list-detail">
+        <a class="item item-list-detail sfondoScrollImage" >
           <ion-scroll direction="x" style="margin: 30px;
     background-color: #ffffff;
     border: 1px solid black;
@@ -19,7 +19,7 @@
             <img ng-repeat="image in fotos" ng-src="{{image.pathFoto}}" ng-click="showImages($index)" class="image-list-thumb"/>
           </ion-scroll>
         </a>
-        <div class="item">
+        <div class="item" style="background-color:transparent;">
             <h2>{{album.descrizione}}</h2>
         </div>
 

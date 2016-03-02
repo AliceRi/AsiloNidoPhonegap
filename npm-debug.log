@@ -1,0 +1,381 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'cordova' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.2
+4 verbose install initial load of /urs/local/lib/package.json
+5 verbose readDependencies loading dependencies from /urs/local/lib/package.json
+6 silly cache add args [ 'cordova', null ]
+7 verbose cache add spec cordova
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'cordova',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'cordova',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 silly addNamed cordova@*
+10 verbose addNamed "*" is a valid semver range for cordova
+11 silly addNameRange { name: 'cordova', range: '*', hasData: false }
+12 silly mapToRegistry name cordova
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/cordova
+16 verbose addNameRange registry:https://registry.npmjs.org/cordova not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/cordova
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 20:02:27
+20 verbose request id f080637026965570
+21 verbose etag "BRL82BVEQ2KSIZQWG6UDXIUI8"
+22 http request GET https://registry.npmjs.org/cordova
+23 http 200 https://registry.npmjs.org/cordova
+24 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 verbose headers   etag: '"48R6DSFIP6WHSV567A2J0MCJA"',
+24 verbose headers   'content-type': 'application/json',
+24 verbose headers   'cache-control': 'max-age=300',
+24 verbose headers   'content-length': '376526',
+24 verbose headers   'accept-ranges': 'bytes',
+24 verbose headers   date: 'Wed, 02 Mar 2016 19:02:26 GMT',
+24 verbose headers   via: '1.1 varnish',
+24 verbose headers   age: '25',
+24 verbose headers   connection: 'keep-alive',
+24 verbose headers   'x-served-by': 'cache-ams4127-AMS',
+24 verbose headers   'x-cache': 'HIT',
+24 verbose headers   'x-cache-hits': '65',
+24 verbose headers   'x-timer': 'S1456945346.149325,VS0,VE0',
+24 verbose headers   vary: 'Accept' }
+25 silly get cb [ 200,
+25 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+25 silly get     etag: '"48R6DSFIP6WHSV567A2J0MCJA"',
+25 silly get     'content-type': 'application/json',
+25 silly get     'cache-control': 'max-age=300',
+25 silly get     'content-length': '376526',
+25 silly get     'accept-ranges': 'bytes',
+25 silly get     date: 'Wed, 02 Mar 2016 19:02:26 GMT',
+25 silly get     via: '1.1 varnish',
+25 silly get     age: '25',
+25 silly get     connection: 'keep-alive',
+25 silly get     'x-served-by': 'cache-ams4127-AMS',
+25 silly get     'x-cache': 'HIT',
+25 silly get     'x-cache-hits': '65',
+25 silly get     'x-timer': 'S1456945346.149325,VS0,VE0',
+25 silly get     vary: 'Accept' } ]
+26 verbose get saving cordova to /Users/alice/.npm/registry.npmjs.org/cordova/.cache.json
+27 silly addNameRange number 2 { name: 'cordova', range: '*', hasData: true }
+28 silly addNameRange versions [ 'cordova',
+28 silly addNameRange   [ '0.0.1',
+28 silly addNameRange     '0.0.2',
+28 silly addNameRange     '0.0.3',
+28 silly addNameRange     '0.0.4',
+28 silly addNameRange     '0.0.5',
+28 silly addNameRange     '0.0.6',
+28 silly addNameRange     '0.0.7',
+28 silly addNameRange     '0.0.8',
+28 silly addNameRange     '0.0.9',
+28 silly addNameRange     '0.1.0',
+28 silly addNameRange     '0.1.1',
+28 silly addNameRange     '0.1.2',
+28 silly addNameRange     '0.1.3',
+28 silly addNameRange     '0.1.4',
+28 silly addNameRange     '0.1.5',
+28 silly addNameRange     '0.1.6',
+28 silly addNameRange     '0.1.7',
+28 silly addNameRange     '0.1.8',
+28 silly addNameRange     '0.1.9',
+28 silly addNameRange     '0.1.10',
+28 silly addNameRange     '0.1.11',
+28 silly addNameRange     '0.1.12',
+28 silly addNameRange     '0.1.13',
+28 silly addNameRange     '0.1.14',
+28 silly addNameRange     '2.2.0',
+28 silly addNameRange     '2.3.0',
+28 silly addNameRange     '2.3.1',
+28 silly addNameRange     '2.3.2',
+28 silly addNameRange     '2.3.3',
+28 silly addNameRange     '2.3.5',
+28 silly addNameRange     '2.3.6',
+28 silly addNameRange     '2.4.0',
+28 silly addNameRange     '2.4.1',
+28 silly addNameRange     '2.4.2',
+28 silly addNameRange     '2.4.3',
+28 silly addNameRange     '2.4.4',
+28 silly addNameRange     '2.4.5',
+28 silly addNameRange     '2.4.6',
+28 silly addNameRange     '2.4.7',
+28 silly addNameRange     '2.4.8',
+28 silly addNameRange     '2.4.9',
+28 silly addNameRange     '2.4.10',
+28 silly addNameRange     '2.5.0',
+28 silly addNameRange     '2.5.2',
+28 silly addNameRange     '2.5.3',
+28 silly addNameRange     '2.5.4',
+28 silly addNameRange     '2.5.5',
+28 silly addNameRange     '2.6.0',
+28 silly addNameRange     '2.6.1',
+28 silly addNameRange     '2.6.2',
+28 silly addNameRange     '2.7.0-rc.1',
+28 silly addNameRange     '2.7.1-rc.1',
+28 silly addNameRange     '2.7.2',
+28 silly addNameRange     '2.7.3',
+28 silly addNameRange     '2.7.4',
+28 silly addNameRange     '2.8.0',
+28 silly addNameRange     '2.8.1',
+28 silly addNameRange     '2.8.2',
+28 silly addNameRange     '2.8.3',
+28 silly addNameRange     '2.8.4',
+28 silly addNameRange     '2.8.5',
+28 silly addNameRange     '2.8.6',
+28 silly addNameRange     '2.8.7',
+28 silly addNameRange     '2.8.8',
+28 silly addNameRange     '2.8.9',
+28 silly addNameRange     '2.8.10',
+28 silly addNameRange     '2.8.11',
+28 silly addNameRange     '2.8.12',
+28 silly addNameRange     '2.8.13',
+28 silly addNameRange     '2.8.14',
+28 silly addNameRange     '2.8.15',
+28 silly addNameRange     '2.8.16',
+28 silly addNameRange     '2.8.17',
+28 silly addNameRange     '2.8.18',
+28 silly addNameRange     '2.8.19',
+28 silly addNameRange     '2.8.20',
+28 silly addNameRange     '2.8.21',
+28 silly addNameRange     '2.8.22',
+28 silly addNameRange     '2.8.23',
+28 silly addNameRange     '2.8.24',
+28 silly addNameRange     '2.8.25',
+28 silly addNameRange     '2.9.0',
+28 silly addNameRange     '2.9.1',
+28 silly addNameRange     '2.9.2',
+28 silly addNameRange     '2.9.3',
+28 silly addNameRange     '2.9.4',
+28 silly addNameRange     '2.9.5',
+28 silly addNameRange     '2.9.6',
+28 silly addNameRange     '2.9.7',
+28 silly addNameRange     '3.0.0-rc1',
+28 silly addNameRange     '3.0.0-rc1-1',
+28 silly addNameRange     '3.0.0-rc1-3',
+28 silly addNameRange     '3.0.0',
+28 silly addNameRange     '3.0.1',
+28 silly addNameRange     '3.0.2',
+28 silly addNameRange     '3.0.3',
+28 silly addNameRange     '3.0.4',
+28 silly addNameRange     '3.0.5',
+28 silly addNameRange     '3.0.6',
+28 silly addNameRange     '3.0.7',
+28 silly addNameRange     '3.0.8',
+28 silly addNameRange     '3.0.9',
+28 silly addNameRange     '3.0.10',
+28 silly addNameRange     '3.1.0-0.1.0',
+28 silly addNameRange     '3.1.0-0.2.0',
+28 silly addNameRange     '3.2.0-rc.1',
+28 silly addNameRange     '3.2.0-0.1.0',
+28 silly addNameRange     '3.2.0-0.2.0',
+28 silly addNameRange     '3.2.0-0.3.0',
+28 silly addNameRange     '3.2.0-0.4.0',
+28 silly addNameRange     '3.3.0-rc.1',
+28 silly addNameRange     '3.3.0-0.1.1',
+28 silly addNameRange     '3.3.1-0.1.2',
+28 silly addNameRange     '2.9.0-rc1',
+28 silly addNameRange     '3.3.1-0.3.0',
+28 silly addNameRange     '3.3.1-0.3.1',
+28 silly addNameRange     '3.3.1-0.4.1',
+28 silly addNameRange     '3.3.1-0.4.2',
+28 silly addNameRange     '3.4.0-0.1.0',
+28 silly addNameRange     '3.4.0-0.1.1',
+28 silly addNameRange     '3.4.0-0.1.2',
+28 silly addNameRange     '3.4.0-0.1.3',
+28 silly addNameRange     '0.0.0-fake',
+28 silly addNameRange     '3.4.1-0.1.0',
+28 silly addNameRange     '3.5.0-0.2.0',
+28 silly addNameRange     '3.5.0-0.2.1',
+28 silly addNameRange     '3.5.0-0.2.2',
+28 silly addNameRange     '3.5.0-0.2.3',
+28 silly addNameRange     '3.5.0-0.2.4',
+28 silly addNameRange     '3.5.0-0.2.6',
+28 silly addNameRange     '3.5.0-0.2.7',
+28 silly addNameRange     '3.6.0-0.2.8',
+28 silly addNameRange     '3.6.0-0.2.9',
+28 silly addNameRange     '3.6.1-0.2.10',
+28 silly addNameRange     '3.6.3-0.2.11',
+28 silly addNameRange     '3.6.3-0.2.12',
+28 silly addNameRange     '3.6.3-0.2.13',
+28 silly addNameRange     '4.0.0',
+28 silly addNameRange     '4.0.1',
+28 silly addNameRange     '4.1.0',
+28 silly addNameRange     '4.1.1',
+28 silly addNameRange     '4.1.2',
+28 silly addNameRange     '4.1.3-nightly.2014.10.21',
+28 silly addNameRange     '4.2.0',
+28 silly addNameRange     '4.3.0',
+28 silly addNameRange     '5.0.0',
+28 silly addNameRange     '4.3.1',
+28 silly addNameRange     '5.1.1',
+28 silly addNameRange     '5.2.0',
+28 silly addNameRange     '5.3.1',
+28 silly addNameRange     '5.3.3',
+28 silly addNameRange     '5.4.0',
+28 silly addNameRange     '5.4.1',
+28 silly addNameRange     '6.0.0' ] ]
+29 silly addNamed cordova@6.0.0
+30 verbose addNamed "6.0.0" is a plain semver version for cordova
+31 silly mapToRegistry name cordova
+32 silly mapToRegistry using default registry
+33 silly mapToRegistry registry https://registry.npmjs.org/
+34 silly mapToRegistry uri https://registry.npmjs.org/cordova
+35 verbose addRemoteTarball https://registry.npmjs.org/cordova/-/cordova-6.0.0.tgz not in flight; adding
+36 verbose addRemoteTarball [ 'https://registry.npmjs.org/cordova/-/cordova-6.0.0.tgz',
+36 verbose addRemoteTarball   '2c1e75a9c0dd6cee8381d5608870087ab44f3e68' ]
+37 info retry fetch attempt 1 at 20:02:28
+38 info attempt registry request try #1 at 20:02:28
+39 http fetch GET https://registry.npmjs.org/cordova/-/cordova-6.0.0.tgz
+40 http fetch 200 https://registry.npmjs.org/cordova/-/cordova-6.0.0.tgz
+41 silly fetchAndShaCheck shasum 2c1e75a9c0dd6cee8381d5608870087ab44f3e68
+42 verbose addTmpTarball /var/folders/4n/r7h4m25578ngvf04d4sql7cw0000gn/T/npm-19994-68c0957f/registry.npmjs.org/cordova/-/cordova-6.0.0.tgz not in flight; adding
+43 verbose addTmpTarball already have metadata; skipping unpack for cordova@6.0.0
+44 silly cache afterAdd cordova@6.0.0
+45 verbose afterAdd /Users/alice/.npm/cordova/6.0.0/package/package.json not in flight; writing
+46 verbose afterAdd /Users/alice/.npm/cordova/6.0.0/package/package.json written
+47 silly install resolved [ { name: 'cordova',
+47 silly install resolved     version: '6.0.0',
+47 silly install resolved     preferGlobal: 'true',
+47 silly install resolved     description: 'Cordova command line interface tool',
+47 silly install resolved     main: 'cordova',
+47 silly install resolved     engines: { node: '>=0.9.9' },
+47 silly install resolved     engineStrict: true,
+47 silly install resolved     bin: { cordova: './bin/cordova' },
+47 silly install resolved     scripts:
+47 silly install resolved      { test: 'node node_modules/jasmine-node/bin/jasmine-node --captureExceptions --color spec',
+47 silly install resolved        cover: 'node node_modules/istanbul/lib/cli.js cover --root src --print detail node_modules/jasmine-node/bin/jasmine-node -- spec' },
+47 silly install resolved     repository:
+47 silly install resolved      { type: 'git',
+47 silly install resolved        url: 'https://git-wip-us.apache.org/repos/asf/cordova-cli.git' },
+47 silly install resolved     bugs:
+47 silly install resolved      { url: 'https://issues.apache.org/jira/browse/CB',
+47 silly install resolved        email: 'dev@cordova.apache.org' },
+47 silly install resolved     keywords: [ 'cordova', 'client', 'cli' ],
+47 silly install resolved     dependencies:
+47 silly install resolved      { ansi: '^0.3.0',
+47 silly install resolved        'cordova-lib': '6.0.0',
+47 silly install resolved        q: '1.0.1',
+47 silly install resolved        nopt: '3.0.1',
+47 silly install resolved        underscore: '1.7.0',
+47 silly install resolved        'update-notifier': '^0.5.0' },
+47 silly install resolved     devDependencies:
+47 silly install resolved      { istanbul: '^0.3.4',
+47 silly install resolved        grunt: '0.4.5',
+47 silly install resolved        'grunt-retire': '0.3.7',
+47 silly install resolved        'jasmine-node': '1.14.5' },
+47 silly install resolved     author: { name: 'Anis Kadri' },
+47 silly install resolved     contributors:
+47 silly install resolved      [ [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object] ],
+47 silly install resolved     license: 'Apache version 2.0',
+47 silly install resolved     _id: 'cordova@6.0.0',
+47 silly install resolved     _shasum: '2c1e75a9c0dd6cee8381d5608870087ab44f3e68',
+47 silly install resolved     _resolved: 'https://registry.npmjs.org/cordova/-/cordova-6.0.0.tgz',
+47 silly install resolved     _from: 'cordova@*',
+47 silly install resolved     _npmVersion: '3.5.3',
+47 silly install resolved     _nodeVersion: '5.4.1',
+47 silly install resolved     _npmUser: { name: 'stevegill', email: 'stevengill97@gmail.com' },
+47 silly install resolved     dist:
+47 silly install resolved      { shasum: '2c1e75a9c0dd6cee8381d5608870087ab44f3e68',
+47 silly install resolved        tarball: 'http://registry.npmjs.org/cordova/-/cordova-6.0.0.tgz' },
+47 silly install resolved     maintainers:
+47 silly install resolved      [ [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object],
+47 silly install resolved        [Object] ],
+47 silly install resolved     directories: {} } ]
+48 info install cordova@6.0.0 into /urs/local/lib
+49 info installOne cordova@6.0.0
+50 verbose installOne of cordova to /urs/local/lib not in flight; installing
+51 verbose lock using /Users/alice/.npm/_locks/cordova-e3b337f595f28a19.lock for /urs/local/lib/node_modules/cordova
+52 silly install write writing cordova 6.0.0 to /urs/local/lib/node_modules/cordova
+53 verbose unbuild lib/node_modules/cordova
+54 info preuninstall cordova@5.4.1
+55 info uninstall cordova@5.4.1
+56 verbose unbuild rmStuff cordova@5.4.1 from /urs/local/lib/node_modules
+57 silly gentlyRm /urs/local/bin/cordova is being gently removed
+58 silly gentlyRm verifying /urs/local is an npm working directory
+59 silly gentlyRm containing path /urs/local is under npm's control, in /urs/local
+60 silly gentlyRm deletion target /urs/local/bin/cordova is under /urs/local
+61 verbose gentlyRm vacuuming from /urs/local/bin/cordova up to /urs/local
+62 silly vacuum-fs removing /urs/local/bin/cordova
+63 verbose unlock done using /Users/alice/.npm/_locks/cordova-e3b337f595f28a19.lock for /urs/local/lib/node_modules/cordova
+64 verbose stack Error: EACCES: permission denied, unlink '/urs/local/bin/cordova'
+64 verbose stack     at Error (native)
+65 verbose cwd /Users/alice/MyApp/AsiloAppMy
+66 error Darwin 14.5.0
+67 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "-g" "cordova"
+68 error node v4.2.2
+69 error npm  v2.14.7
+70 error path /urs/local/bin/cordova
+71 error code EACCES
+72 error errno -13
+73 error syscall unlink
+74 error Error: EACCES: permission denied, unlink '/urs/local/bin/cordova'
+74 error     at Error (native)
+74 error  { [Error: EACCES: permission denied, unlink '/urs/local/bin/cordova']
+74 error   errno: -13,
+74 error   code: 'EACCES',
+74 error   syscall: 'unlink',
+74 error   path: '/urs/local/bin/cordova' }
+75 error Please try running this command again as root/Administrator.
+76 verbose exit [ -13, true ]
+77 verbose unbuild lib/node_modules/cordova
+78 info preuninstall cordova@5.4.1
+79 info uninstall cordova@5.4.1
+80 verbose unbuild rmStuff cordova@5.4.1 from /urs/local/lib/node_modules
+81 silly gentlyRm /urs/local/bin/cordova is being gently removed
+82 silly gentlyRm verifying /urs/local is an npm working directory
+83 silly gentlyRm containing path /urs/local is under npm's control, in /urs/local
+84 silly gentlyRm deletion target /urs/local/bin/cordova is under /urs/local
+85 verbose gentlyRm vacuuming from /urs/local/bin/cordova up to /urs/local
+86 silly vacuum-fs removing /urs/local/bin/cordova
+87 error error rolling back Error: EACCES: permission denied, unlink '/urs/local/bin/cordova'
+87 error error rolling back     at Error (native)
+87 error error rolling back  { [Error: EACCES: permission denied, unlink '/urs/local/bin/cordova']
+87 error error rolling back   errno: -13,
+87 error error rolling back   code: 'EACCES',
+87 error error rolling back   syscall: 'unlink',
+87 error error rolling back   path: '/urs/local/bin/cordova' }

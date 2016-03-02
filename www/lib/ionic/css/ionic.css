@@ -6456,7 +6456,8 @@ button.item.item-button-right {
   -webkit-transition-timing-function: cubic-bezier(0.25, 0.81, 0.24, 1);
   transition-timing-function: cubic-bezier(0.25, 0.81, 0.24, 1);
   -webkit-transition-property: all;
-  transition-property: all; }
+  transition-property: all; 
+}
 
 .item-left-edit {
   -webkit-transition: all ease-in-out 125ms;

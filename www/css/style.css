@@ -24,7 +24,7 @@
 }
  
 .transparent {
-  background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.8);
 }
  
 .slider {
@@ -72,7 +72,7 @@
 {
     'align-items: center;
     'border: 2px solid blue;
-    background-color:rgba(164, 130, 70, 0.75);
+    background-color:rgba(39, 132, 164, 0.75);
     font-weight: bold;
     margin-top: 10px;
 }
@@ -118,4 +118,29 @@
 {
     background-color:rgba(201, 105, 98, 0.8);
     margin:10px;
+}
+.sfondoAlbumGallery
+{
+    background-color:rgba(175, 131, 143, 0.9 );
+}
+.sfondoTitoloAlbum
+{
+    background-color:rgba(226, 169, 185, 0.7 );
+}
+
+.sfondoScrollImage
+{
+    background-color:rgba(142, 83, 67,0.9);
+}
+.titoloPagina
+{
+    font-size: 350%;
+    font-weight: bold;
+    background-color:rgba(235, 234, 211,0.7);
+    text-align: center;
+}
+
+.itemMenu
+{
+    background-color:rgba(170, 153, 130,0.7);
 }
