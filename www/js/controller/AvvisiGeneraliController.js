@@ -27,9 +27,27 @@ app.controller('AvvisiCtrl', function($scope,LoginService, AvvisiGeneraliService
 })
 
 app.controller('AvvisoCtrl',
-             function($scope,$rootScope) {
+             function($scope,$rootScope,AvvisiGeneraliService) {
     console.log("son qui");
    $scope.detail =$rootScope.name; 
+    $scope.risposta="";
+    $scope.data = {};
+   console.log("prima risposte"); AvvisiGeneraliService.leggiRisposte($rootScope.name.IDAvviso).success(
+                        function(risp) {
+            $scope.risposte=risp;  
+                            console.log(risp);
+        }
+                        );
+     
     
+    $scope.Rispondi = function() { AvvisiGeneraliService.rispondiAvviso($scope.data.message,$rootScope.name.IDAvviso,$rootScope.globals.currentUser.username);
+        AvvisiGeneraliService.leggiRisposte($rootScope.name.IDAvviso).success(
+                        function(risp) {
+            $scope.risposte=risp;  
+                            console.log(risp);
+        }
+                        );
+         $scope.data.message="";
+    };
     
 })

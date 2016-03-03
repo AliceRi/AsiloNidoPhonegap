@@ -17,6 +17,33 @@
            
        </div>
    </div>
+      <ion-item class="item-thumbnail-right item-icon-right" style="background-color:transparent;margin:1px;padding:1px;" collection-repeat="r in risposte" >
+   <div class="row" style="margin:1px;padding:1px;">
+   <div class="col col-90 col-offset-10">
+   
+   <div class="card">
+      <div class="item item-text-wrap">
+       <h3 style="font-weight: bold;">{{r.username}} :</h3>
+        {{r.Risposta}}
+      </div>
+  </div>
+</div>
+ </div>
+  </ion-item>
+   <br><br>
+      <div class="row"><div class="col">
+          <h2>Rispondi</h2>
+      </div></div>
+      <div class="row">
+       <div class="col">
+         	  <textarea ng-model="data.message" value="ssss" placeholder="Rispondi..." cols="54" rows="5"></textarea>
+       </div>
+   </div>
+   <div class="row">
+       <div class="col">
+           <button class="button button-block  button-assertive " ng-click="Rispondi()">Rispondi</button>
+       </div>
+   </div>
   </ion-content>
   
 </ion-view>

@@ -137,6 +137,15 @@ app.config(function($stateProvider, $urlRouterProvider) {
           }
       }
   })
+  .state('app.meteo', {
+    url: '/meteo',
+      views:{
+          'menuContent':{  
+                templateUrl: 'view/meteo.html',
+                controller: 'MenuCtrl'
+          }
+      }
+  })
   
   
 })

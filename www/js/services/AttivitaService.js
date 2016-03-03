@@ -30,6 +30,12 @@ app.service('AttivitaService', function($q,$http) {
             return promise;
                 
             
+        },
+        
+        rispondiAvviso:function(risposta,idAvviso,username){
+            console.log("service");
+            console.log(risposta);
         }
+        
     }
 })
